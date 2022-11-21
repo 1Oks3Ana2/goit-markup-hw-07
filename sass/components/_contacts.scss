@@ -1,0 +1,38 @@
+.main-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.main-contact__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.main-contact__link {
+  display: flex;
+  align-items: center;
+
+  color: var(--secondary-txt-cl);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  // transition: color 250ms var(--time-function);
+
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.main-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

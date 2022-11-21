@@ -1,0 +1,46 @@
+//utils styles
+
+@import "./utils/variables";
+@import "./utils/v-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+// base styles
+
+@import "./base/base";
+@import "./base/reset";
+
+// component styles
+
+@import "./components/section";
+@import "./components/container";
+@import "./components/buttons";
+@import "./components/title";
+@import "./components/logo";
+@import "./components/action";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/work";
+@import "./components/team";
+@import "./components/social";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/address";
+@import "./components/social-media";
+@import "./components/subscription";
+
+// portfolio
+
+@import "./components/portfolio-btn";
+@import "./components/projects";
+
+// modal
+
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/form-comments";
+@import "./components/form-checkbox";

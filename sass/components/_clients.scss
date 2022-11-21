@@ -1,0 +1,40 @@
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--inactive-icon-cl);
+  border-radius: 4px;
+
+  color: var(--inactive-icon-cl);
+
+  // @extend %transition;
+  // @include transitioned($property: border-color);
+
+  transition: color 250ms var(--time-function),
+    border-color 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-list__icon {
+  fill: currentColor;
+}
